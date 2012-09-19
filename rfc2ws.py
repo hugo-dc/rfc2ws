@@ -1,17 +1,16 @@
-
 import wx
-import gui
-import texts
+#import gui
+#import texts
 
 
 
 class Rfc2Ws(wx.App):
 	def init(self):
 		# Splash window
-		image = wx.Image(os.getcwd() + '/images/splash.png', wx.BITMAP_TYPE_PNG)
+		image = wx.Image(os.getcwd() + '/resources/splash.png', wx.BITMAP_TYPE_PNG)
 		image = image.ConvertToBitmap()
 
-		wx.SplashScreen(image, wx.SPLASH_CENTRE_ON_SCREEN | wx.SPLASH_TIMEOUT, 1500, None, -1)
+		wx.SplashScreen(image, wx.SPLASH_CENTRE_ON_SCREEN | wx.SPLASH_TIMEOUT, 5500, None, -1)
 		wx.Yield()
 
 		self.frame = gui.MainWindow(parent=None, id=-1, title=texts.title)
