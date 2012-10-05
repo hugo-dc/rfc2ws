@@ -2,7 +2,6 @@ import database
 import easysap
 import base64
 
-import dportenis
 
 #---------------------------------------------------------------------#
 # Interacciones con la base de datos                                  #
