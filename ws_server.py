@@ -23,10 +23,10 @@ def_class = "\n\n\nclass Server(DefinitionBase):\n"
 
 
 def sap2ws_type(sap_type):
-    sap2ws = {
-        'C' : 'String',
-        'I' : 'Integer'
-    }
+	sap2ws = {
+        	'C' : 'String',
+	        'I' : 'Integer'
+	}	
     
 	if sap_type.find('C')>= 0:
 		return 'String'
