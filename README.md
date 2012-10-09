@@ -3,7 +3,7 @@ Rfc2ws
 
 ### Required Python Modules:
 	easysap/pysap       https://github.com/hugo-dc/easysap
-	soaplib
+	soaplib             https://github.com/soaplib/soaplib
 
 Un programa para exponer una RFC como Servicio Web.
 
