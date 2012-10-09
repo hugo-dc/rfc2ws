@@ -5,6 +5,12 @@ Rfc2ws
 	easysap/pysap       https://github.com/hugo-dc/easysap
 	soaplib             https://github.com/soaplib/soaplib
 
+#### Important
+You need to install zddif_field_info_get in your SAP System in order to run this program.
+The file zzdif_field_info_get is included in the easysap library, the code should be implemented as a SAP RFC.
+
+
+
 Un programa para exponer una RFC como Servicio Web.
 
 El programa tendrá las siguientes opciones:
