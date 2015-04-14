@@ -35,15 +35,18 @@ ERR_WID     = '[Error] Wrong ID'
 ERR_RFCDNE  = 'RFC does not exists in SAP system!'
 
 MSG_WSCR    = 'Service has been created for RFC'
-MSG_BYE     = 'Bye'
+MSG_BYE     = 'Exiting...'
 
 CLI_HELP   = """
 Available commands:
 ===================
 
+    help   - Print this message
     exit   - Exit 
     config - Configure SAP Connection 
     new    - Create a new Web Service    
+    show   - Show services
+    start  - Start WebService
     """
 
 CLI_HEAD = """

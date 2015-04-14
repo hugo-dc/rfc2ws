@@ -5,14 +5,16 @@ import query
 DB_NAME = 'rfc2ws.db'
 
 # database
-def executeQuery(query, q = 'S', val=True):
+def executeQuery(query_name, q = 'S', val=True, pars=()):
     r = None
     if val:
         checkDatabase()
             
+    sql = query.get(query_name) % pars
+
     con = sqlite3.connect(DB_NAME)
     cur = con.cursor()
-    cur.execute(query) 
+    cur.execute(sql) 
     if q == 'S':
         r = cur.fetchall()
     if q == 'I':
